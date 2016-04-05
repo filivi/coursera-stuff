@@ -4,9 +4,9 @@
 }
 
 h1 {
-    margin-bottom: 50px;
-    font-size: 1.75em;
-    text-align: center
+    margin-bottom: 40px;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 section {
@@ -17,36 +17,64 @@ section {
     float: left;
 }
 
-.title {
-    font-size: 1.25em;
-    border: 1px solid black;
+h3 {
     text-align: center;
-    position: relative;
-    left: 11px;
-    bottom: 11px;
-    width: 140px;
-    float: right;
+    margin: 0 0 15px;
+    font-size: 1.3em;
+    font-weight: bold;
 }
 
 .text {
   clear: right;
 }
 
-#chicken .title {
-    background-color: #EEBBAA;
+/** HEADER **/
+
+#header-nav {    
+    border-color: #A6A6A6;
+    background-color: #A6A6A6;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
 }
 
-#beef .title {
-    background-color: #A52A2A;
+.navbar-brand h1 {
+    color: #000;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: right;
+} 
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
 }
 
-#sushi .title {
-    background-color: #DEB887;
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 2px solid #000;
 }
 
-.row {
-    width: 100%;
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #000;
+    padding: 0;
 }
+.navbar-default .navbar-collapse ul {
+    margin: 0;
+    background-color: #fff;
+}
+
+.navbar-default .navbar-collapse li {
+    border: 1px solid #000;   
+    text-align: center;
+    font-weight: bold;
+    height: 40px;
+}
+
+.navbar-default .navbar-collapse li a {
+    color: #000;
+}
+
+/** HEADER END **/
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
@@ -61,11 +89,15 @@ section {
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
 
+  
 }
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
-
+    
+    #menu {
+        padding: 0 100px 0;
+    }
 }
 
 
